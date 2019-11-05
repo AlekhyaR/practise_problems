@@ -1,0 +1,11 @@
+def centuryFromYear(year)
+    if ((year > 1) || ( year < 2005) || ( year == 1 ) || (year == 2005))
+        if (year == 100 || year < 100)
+             1
+        elsif (year%100 == 0)
+             year / 100
+        elsif (year%100 > 0)
+             year /100 + 1
+        end
+    end
+end
