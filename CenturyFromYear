@@ -9,3 +9,11 @@ def centuryFromYear(year)
         end
     end
 end
+
+SIMPLEST SOLUTION
+
+def centuryFromYear(year)
+    if ((year > 1) || ( year < 2005) || ( year == 1 ) || (year == 2005))
+        ((year -1)/100)+1
+    end
+end
