@@ -1,0 +1,6 @@
+def checkPalindrome(inputString)
+    len = inputString.length
+    if len > 0 || len < 10**5 || len == 1 || len == 10**5
+        return inputString == inputString.reverse
+    end
+end
