@@ -1,0 +1,19 @@
+each_cons
+=========
+
+def adjacentElementsProduct(inputArray)
+  inputArray.each_cons(2).map{|x,y| x*y}.max
+end
+
+
+
+Other solution
+---------------
+
+def adjacentElementsProduct(inputArray)
+  productArray = []
+  (inputArray.length - 1).times do |i|
+      productArray << inputArray[i] * inputArray[i + 1]
+  end
+  productArray.max
+end
