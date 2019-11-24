@@ -1,0 +1,7 @@
+def allLongestStrings(inputArray)
+  inputArray.select {|b| b.length == inputArray.map(&:length).max}
+end
+
+Question
+For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be
+allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
